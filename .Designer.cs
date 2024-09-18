@@ -1,6 +1,6 @@
 ﻿namespace ProyectoTienda
 {
-    partial class Form1
+    partial class FrmProductos
     {
         /// <summary>
         /// Variable del diseñador necesaria.
@@ -28,28 +28,28 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dtgvProductos = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.txtProductos = new System.Windows.Forms.TextBox();
+            this.btnAgregar = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.button3 = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgvProductos)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // dataGridView1
+            // dtgvProductos
             // 
-            this.dataGridView1.AllowUserToAddRows = false;
-            this.dataGridView1.AllowUserToDeleteRows = false;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(38, 128);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.RowHeadersWidth = 62;
-            this.dataGridView1.RowTemplate.Height = 28;
-            this.dataGridView1.Size = new System.Drawing.Size(1172, 508);
-            this.dataGridView1.TabIndex = 0;
+            this.dtgvProductos.AllowUserToAddRows = false;
+            this.dtgvProductos.AllowUserToDeleteRows = false;
+            this.dtgvProductos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtgvProductos.Location = new System.Drawing.Point(38, 128);
+            this.dtgvProductos.Name = "dtgvProductos";
+            this.dtgvProductos.ReadOnly = true;
+            this.dtgvProductos.RowHeadersWidth = 62;
+            this.dtgvProductos.RowTemplate.Height = 28;
+            this.dtgvProductos.Size = new System.Drawing.Size(1172, 508);
+            this.dtgvProductos.TabIndex = 0;
             // 
             // label1
             // 
@@ -61,21 +61,22 @@
             this.label1.TabIndex = 1;
             this.label1.Text = "Productos:";
             // 
-            // textBox1
+            // txtProductos
             // 
-            this.textBox1.Location = new System.Drawing.Point(170, 77);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(980, 37);
-            this.textBox1.TabIndex = 2;
+            this.txtProductos.Location = new System.Drawing.Point(170, 77);
+            this.txtProductos.Name = "txtProductos";
+            this.txtProductos.Size = new System.Drawing.Size(980, 37);
+            this.txtProductos.TabIndex = 2;
             // 
-            // button1
+            // btnAgregar
             // 
-            this.button1.Location = new System.Drawing.Point(1168, 75);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(42, 41);
-            this.button1.TabIndex = 3;
-            this.button1.Text = "+";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnAgregar.Location = new System.Drawing.Point(1168, 75);
+            this.btnAgregar.Name = "btnAgregar";
+            this.btnAgregar.Size = new System.Drawing.Size(42, 41);
+            this.btnAgregar.TabIndex = 3;
+            this.btnAgregar.Text = "+";
+            this.btnAgregar.UseVisualStyleBackColor = true;
+            this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
             // 
             // panel1
             // 
@@ -98,23 +99,23 @@
             this.button3.Text = "X";
             this.button3.UseVisualStyleBackColor = true;
             // 
-            // Form1
+            // FrmProductos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(14F, 30F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(66)))), ((int)(((byte)(82)))));
             this.ClientSize = new System.Drawing.Size(1244, 675);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.btnAgregar);
+            this.Controls.Add(this.txtProductos);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dtgvProductos);
             this.Font = new System.Drawing.Font("Century Gothic", 12F);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
-            this.Name = "Form1";
+            this.Name = "FrmProductos";
             this.Text = "Form1";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgvProductos)).EndInit();
             this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -123,10 +124,10 @@
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dtgvProductos;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.TextBox txtProductos;
+        private System.Windows.Forms.Button btnAgregar;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button button3;
     }
