@@ -27,10 +27,10 @@ namespace ProyectoTienda
             switch (columna)
             {
                 case 6:
-                    {/*
+                    {
                         id = int.Parse(dtgvProductos.Rows[fila].Cells[0].Value.ToString());
                         mp.Borrar(id, dtgvProductos.Rows[fila].Cells[1].Value.ToString());
-                        dtgvProductos.Visible = false;*/
+                        dtgvProductos.Visible = false;
                     }
                     break;
                 case 7:
@@ -51,6 +51,11 @@ namespace ProyectoTienda
         {
             dtgvProductos.Visible = true;
             mp.Mostrar(dtgvProductos, txtProductos.Text);
+        }
+
+        private void btnCerrar_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
 
         public FrmProductos()
