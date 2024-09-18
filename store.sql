@@ -72,7 +72,7 @@ BEGIN
     DECLARE exit handler FOR 1292 CALL p_errorHandler(1292);
     
     UPDATE productos
-    SET monbre = _nombre, descripcion = _descripcion, precio = _precio
+    SET nombre = _nombre, descripcion = _descripcion, precio = _precio
     WHERE idproducto = _idproducto;
 END //
 DELIMITER ;
@@ -92,3 +92,5 @@ BEGIN
     WHERE idproducto = _idproducto;
 END //
 DELIMITER ;
+
+SELECT * FROM productos;
