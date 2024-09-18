@@ -50,6 +50,7 @@
             this.dtgvProductos.RowTemplate.Height = 28;
             this.dtgvProductos.Size = new System.Drawing.Size(1172, 508);
             this.dtgvProductos.TabIndex = 0;
+            this.dtgvProductos.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgvProductos_CellContentClick);
             // 
             // label1
             // 
@@ -67,6 +68,7 @@
             this.txtProductos.Name = "txtProductos";
             this.txtProductos.Size = new System.Drawing.Size(980, 37);
             this.txtProductos.TabIndex = 2;
+            this.txtProductos.TextChanged += new System.EventHandler(this.txtProductos_TextChanged);
             // 
             // btnAgregar
             // 

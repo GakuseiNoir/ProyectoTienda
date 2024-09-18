@@ -27,7 +27,7 @@ namespace ProyectoTienda
         {
             if (FrmProductos.id > 0)
             {
-                //mp.Modificar(txtUsuario, txtEmail, txtTelefono, txtClave, cmbNivel, FrmNivel1.id);
+                mp.ModificarProductos(txtNombre, txtDescripcion, txtPrecio, FrmProductos.id);
             }
             else
             {

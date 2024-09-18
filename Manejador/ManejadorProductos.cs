@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Linq;
 using System.Security.Claims;
 using System.Text;
@@ -32,6 +33,15 @@ namespace Manejador
             bo.DefaultCellStyle.BackColor = co;
             bo.DefaultCellStyle.ForeColor = Color.White;
             return bo;
+        }
+        public void Mostrar(DataGridView tabla, string filtro)
+        {
+            tabla.Columns.Clear();
+            tabla.DataSource = f.Mostrar($"select * from Productos where nombre like'%{filtro}%'", "store").Tables[0];
+            tabla.Columns.Insert(6, Boton("Borrar", Color.Red));
+            tabla.Columns.Insert(7, Boton("Modificar", Color.Green));
+            tabla.AutoResizeColumns();
+            tabla.AutoResizeRows();
         }
     }
 }
